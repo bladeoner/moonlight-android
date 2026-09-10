@@ -63,8 +63,8 @@ jobs:
       - name: Copy artifact
         run: |
           mkdir moonlight-android
-          cp app/build/outputs/apk/root/debug/app-root-debug.apk "moonlight-android/app-root-debug-${COMMIT_PREFIX}.apk"
-          cp app/build/outputs/apk/nonRoot/debug/app-nonRoot-debug.apk "moonlight-android/app-nonRoot-debug-${COMMIT_PREFIX}.apk"
+          cp app/build/outputs/apk/root/release/app-root-release.apk "moonlight-android/app-root-release-${COMMIT_PREFIX}.apk"
+          cp app/build/outputs/apk/nonRoot/release/app-nonRoot-release.apk "moonlight-android/app-nonRoot-release-${COMMIT_PREFIX}.apk"
 
       - name: Upload artifact
         uses: actions/upload-artifact@v7
